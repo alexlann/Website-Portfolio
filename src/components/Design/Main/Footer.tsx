@@ -1,7 +1,7 @@
-import React from 'react'
-
 export default function Footer() {
   return (
-    <div>Footer</div>
+    <div className="absolute bottom-0 left-0 bg-green">
+      Footer
+    </div>
   )
 }

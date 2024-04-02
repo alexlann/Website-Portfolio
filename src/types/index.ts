@@ -8,14 +8,9 @@ export enum ColorOptions {
     white = "white",
 }
 
-export interface TagType {
-    title: string;
-    link: string;
-}
-
 export interface ProjectType {
     title: string;
     image: string;
     link: string;
-    tags: TagType[];
+    tags: string[];
 }

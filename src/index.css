@@ -11,6 +11,7 @@
   --color-white: #ffffff,
   --color-light-green: #CEDED4,
   --color-green: #81BF9A,
+  --color-dark-green: #649A7A,
 }
 
 body {
@@ -33,7 +34,11 @@ body {
 
 /* Custom underline */
 .partial-underline {
-  @apply after:content-[''] after:relative after:top-1 after:hover:w-full after:transition after:transition-all after:duration-300 after:ease-in-out after:hover:left-0 after:block after:rounded after:h-1 after:bg-green;
+  @apply after:content-[''] after:relative after:top-1 after:hover:w-full after:transition after:transition-all after:duration-300 after:ease-in-out after:hover:left-0 after:block after:rounded after:h-1 after:bg-transparent;
+}
+
+.partial-underline-visible {
+  @apply partial-underline after:bg-green
 }
 
 .partial-underline:after {

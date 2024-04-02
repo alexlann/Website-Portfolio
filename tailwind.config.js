@@ -19,7 +19,7 @@ module.exports = {
         "white": "#ffffff",
         "light-green": "#CEDED4",
         "green": "#81BF9A",
-
+        "dark-green": "#649A7A"
       },
     },
   },

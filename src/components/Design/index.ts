@@ -10,7 +10,6 @@ import Circle from "./Shapes/Circle";
 import SquareGrid from "./Shapes/SquareGrid";
 import WordCloud from "./Shapes/WordCloud";
 import SectionTitle from "./Typography/SectionTitle";
-import BodyText from "./Typography/BodyText";
 import Project from "./Projects/Project";
 import Card from "./Projects/Card";
 import Footer from "./Main/Footer";
@@ -31,7 +30,6 @@ export {
     SquareGrid,
     WordCloud,
     SectionTitle,
-    BodyText,
     Project,
     Card,
     Footer,

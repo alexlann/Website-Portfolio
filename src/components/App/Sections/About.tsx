@@ -1,4 +1,4 @@
-import { BodyText, SquareGrid, SectionTitle, Circle, RightSide, LeftSide } from "../../Design";
+import { SquareGrid, SectionTitle, Circle, RightSide, LeftSide } from "../../Design";
 import t from "../../../translation";
 
 export default function About() {
@@ -7,9 +7,9 @@ export default function About() {
       {/* Left side */}
       <LeftSide>
         <SectionTitle>{ t["about-title"] }</SectionTitle>
-        <BodyText>
+        <p>
           { t["about-main"] }
-        </BodyText>
+        </p>
       </LeftSide>
 
       {/* Right side */}

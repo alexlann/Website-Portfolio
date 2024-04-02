@@ -8,7 +8,7 @@ export default function Projects() {
       {/* Left side */}
       <LeftSide>
         <SectionTitle>{ t["projects-title"] }</SectionTitle>
-        <div>
+        <div className="grid grid-cols-2 grid-flow-row gap-x-20	gap-y-10 w-full items-stretch">
           { projects.map(project => <Project key={project.id} project={project} />)}
         </div>
       </LeftSide>

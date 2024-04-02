@@ -1,4 +1,4 @@
-import { BodyText, Card, Footer, SquareGrid, SectionTitle, Circle, RightSide, LeftSide } from "../../Design";
+import { Card, Footer, SquareGrid, SectionTitle, Circle, RightSide, LeftSide } from "../../Design";
 import t from "../../../translation";
 
 export default function Contact() {
@@ -11,15 +11,15 @@ export default function Contact() {
         <Card>
           <>
             <SectionTitle>{ t["contact-card-name"] }</SectionTitle>
-            <BodyText>
+            <p>
               <b>{ t["contact-card-email"] }:</b> { t["contact-card-email-link"] }
-            </BodyText>
-            <BodyText>
+            </p>
+            <p>
               <b>{ t["contact-card-phone"] }:</b> { t["contact-card-phone-link"] }
-            </BodyText>
-            <BodyText>
+            </p>
+            <p>
               <b>{ t["contact-card-github"] }:</b> { t["contact-card-github-link"] }
-            </BodyText>
+            </p>
           </>
         </Card>
       </LeftSide>
