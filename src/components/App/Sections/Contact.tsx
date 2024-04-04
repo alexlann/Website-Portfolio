@@ -1,5 +1,5 @@
-import { Card, Footer, SquareGrid, SectionTitle, Circle, RightSide, LeftSide } from "../../Design";
-import t from "../../../translation";
+import { Footer, SquareGrid, SectionTitle, Circle, RightSide, LeftSide, ContactCard } from "../../Design";
+import t from "../../../data/translation";
 
 export default function Contact() {
 
@@ -7,29 +7,18 @@ export default function Contact() {
     <>
       {/* Left side */}
       <LeftSide>
-        <SectionTitle>{ t["contact-title"] }</SectionTitle>
-        <Card>
-          <>
-            <SectionTitle>{ t["contact-card-name"] }</SectionTitle>
-            <p>
-              <b>{ t["contact-card-email"] }:</b> { t["contact-card-email-link"] }
-            </p>
-            <p>
-              <b>{ t["contact-card-phone"] }:</b> { t["contact-card-phone-link"] }
-            </p>
-            <p>
-              <b>{ t["contact-card-github"] }:</b> { t["contact-card-github-link"] }
-            </p>
-          </>
-        </Card>
+        <SectionTitle className="-mt-8">{ t["contact-title"] }</SectionTitle>
+        <div className="w-full flex justify-center mt-20">
+          <ContactCard />
+        </div>
       </LeftSide>
 
       {/* Right side */}
       <RightSide />
       
       {/* Shapes */}
-      <Circle positionClass={"top-28 left-156"} />
-      <SquareGrid dimensions={{x: 15, y: 55}} positionClass={"top-0 right-1/3"} />
+      <Circle positionClass={"[bottom:12rem] [left:6rem]"} />
+      <SquareGrid dimensions={{x: 25, y: 35}} positionClass={"top-0 [left:38rem]"} />
       <Footer />
     </>
   )

@@ -1,5 +1,5 @@
 import Header from './Header'
-import t from "../../../translation";
+import t from "../../../data/translation";
 import { useEffect, useRef, useState } from 'react';
 import { Main } from '../../App';
 import ScrollIndicator from '../Scroll/ScrollIndicator';
@@ -35,33 +35,34 @@ export default function Layout() {
     section.ref.current.scrollIntoView({ behavior: "smooth" });
   }
 
-  useEffect(() => {
-    Object.keys(sections).forEach(section => {
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) {
-            setactiveSection(sections[section]);
-          }
-        },
-        {
-          root: null, // viewport
-          rootMargin: '0px', // no margin
-          threshold: 0.5, // 50% of target visible
-        }
-      );
+  // TODO: blijft pagina herladen ofz
+  // useEffect(() => {
+  //   Object.keys(sections).forEach(section => {
+  //     const observer = new IntersectionObserver(
+  //       ([entry]) => {
+  //         if (entry.isIntersecting) {
+  //           setactiveSection(sections[section]);
+  //         }
+  //       },
+  //       {
+  //         root: null, // viewport
+  //         rootMargin: '0px', // no margin
+  //         threshold: 0.5, // 50% of target visible
+  //       }
+  //     );
 
-      if (sections[section].ref.current) {
-        observer.observe(sections[section].ref.current);
-      }
+  //     if (sections[section].ref.current) {
+  //       observer.observe(sections[section].ref.current);
+  //     }
 
-      // Clean up the observer
-      return () => {
-        if (sections[section].ref.current) {
-          observer.unobserve(sections[section].ref.current);
-        }
-      };
-    });
-  });
+  //     // Clean up the observer
+  //     return () => {
+  //       if (sections[section].ref.current) {
+  //         observer.unobserve(sections[section].ref.current);
+  //       }
+  //     };
+  //   });
+  // });
 
   return (
     <div>

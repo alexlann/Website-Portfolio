@@ -1,6 +1,6 @@
 import { SquareGrid, Project, SectionTitle, Circle, RightSide, LeftSide } from "../../Design";
-import t from "../../../translation";
-import projects from "../../../projects";
+import t from "../../../data/translation";
+import projects from "../../../data/projects";
 
 export default function Projects() {
   return (
@@ -17,8 +17,8 @@ export default function Projects() {
       <RightSide />
       
       {/* Shapes */}
-      <Circle positionClass={"top-28 left-156"} />
-      <SquareGrid dimensions={{x: 15, y: 55}} positionClass={"top-0 right-1/3"} />
+      <Circle positionClass={"[top:4rem] [left:28rem]"} />
+      <SquareGrid dimensions={{x: 25, y: 45}} positionClass={"bottom-6 left-0"} />
     </>
   )
 }

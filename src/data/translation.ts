@@ -11,6 +11,8 @@ const t = {
   "contact-card-phone": "Phone",
   "contact-card-phone-link": "+32 476 75 49 52",
   "contact-title": "Contact",
+  "btn-copied": "Copied",
+  "btn-copy": "Copy information",
   "hero-btn-contact": "Contact me",
   "hero-btn-projects": "View my Projects",
   "hero-title-sub": "Full Stack & Software Developer",

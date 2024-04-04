@@ -1,5 +1,5 @@
-import Layout from "./Main/Layout";
-import Header from "./Main/Header";
+import Layout from "./Layout/Layout";
+import Header from "./Layout/Header";
 import ScrollIndicator from "./Scroll/ScrollIndicator";
 import Title from "./Typography/Title";
 import SubTitle from "./Typography/SubTitle";
@@ -8,14 +8,15 @@ import MovingCircle from "./Shapes/MovingCircle";
 import CircleImage from "./Shapes/CircleImage";
 import Circle from "./Shapes/Circle";
 import SquareGrid from "./Shapes/SquareGrid";
-import WordCloud from "./Shapes/WordCloud";
+import FilledWordCloud from "./Shapes/FilledWordCloud";
 import SectionTitle from "./Typography/SectionTitle";
-import Project from "./Projects/Project";
-import Card from "./Projects/Card";
-import Footer from "./Main/Footer";
+import Project from "./Cards/Project";
+import Card from "./Cards/Card";
+import Footer from "./Layout/Footer";
 import BoldGreen from "./Typography/BoldGreen";
-import RightSide from "./Main/RightSide";
-import LeftSide from "./Main/LeftSide";
+import RightSide from "./Layout/RightSide";
+import LeftSide from "./Layout/LeftSide";
+import ContactCard from "./Cards/ContactCard";
 
 export {
     Layout,
@@ -28,7 +29,7 @@ export {
     CircleImage,
     Circle,
     SquareGrid,
-    WordCloud,
+    FilledWordCloud,
     SectionTitle,
     Project,
     Card,
@@ -36,4 +37,5 @@ export {
     BoldGreen,
     RightSide,
     LeftSide,
+    ContactCard,
 }

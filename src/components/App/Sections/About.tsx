@@ -1,5 +1,5 @@
 import { SquareGrid, SectionTitle, Circle, RightSide, LeftSide } from "../../Design";
-import t from "../../../translation";
+import t from "../../../data/translation";
 
 export default function About() {
   return (
@@ -16,8 +16,8 @@ export default function About() {
       <RightSide />
       
       {/* Shapes */}
-      <Circle positionClass={"top-28 left-156"} />
-      <SquareGrid dimensions={{x: 15, y: 55}} positionClass={"top-0 right-1/3"} />
+      <Circle positionClass={"[top:12rem] [left:40rem]"} />
+      <SquareGrid dimensions={{x: 18, y: 35}} positionClass={"bottom-0 [left:20rem]"} />
     </>
   )
 }

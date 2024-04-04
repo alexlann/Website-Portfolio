@@ -1,4 +1,5 @@
 export default function SquareGrid({ dimensions = {x: 20, y: 20}, positionClass = "left-0 top-0"} : { dimensions?: {x: number, y: number}, positionClass?: any}) {
+  // TODO: on scoll moeten ze kort verdwijnen
   return (
     <div className={`${positionClass} w-fit absolute -z-10 -my-1 -mx-0.5`}>
       {[...Array(dimensions.x).keys()].map((i: number) => {

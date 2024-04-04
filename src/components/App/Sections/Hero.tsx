@@ -1,5 +1,5 @@
-import { SquareGrid, PrimaryButton, SubTitle, Title, WordCloud, Circle, BoldGreen, RightSide, LeftSide } from "../../Design";
-import t from "../../../translation";
+import { SquareGrid, PrimaryButton, SubTitle, Title, Circle, BoldGreen, RightSide, LeftSide, FilledWordCloud } from "../../Design";
+import t from "../../../data/translation";
 
 export default function Hero({ scrollToContact, scrollToProjects } : { scrollToContact: () => void, scrollToProjects: () => void }) {
   return (
@@ -21,11 +21,14 @@ export default function Hero({ scrollToContact, scrollToProjects } : { scrollToC
 
       {/* Right side */}
       <RightSide>
-        <WordCloud />
+        <div className="overflow-hidden w-fit h-40 absolute bottom-0">
+          {/* TODO: even doen verdwijnen bij scroll */}
+          <FilledWordCloud cloudSize={"sm"} />
+        </div>
       </RightSide>
       
       {/* Shapes */}
-      <Circle positionClass={"top-28 left-156"} />
+      <Circle positionClass={"[top:6rem] [left:32rem]"} />
       <SquareGrid dimensions={{x: 15, y: 55}} positionClass={"top-0 right-1/3"} />
     </>
   )

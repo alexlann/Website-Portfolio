@@ -1,6 +1,6 @@
 import { ColorOptions } from "../../../types";
 
-export default function Circle({ diameter = 24, positionClass = "left-0 top-0", color = ColorOptions.lightGreen} : { diameter?: number, positionClass?: any, color?: ColorOptions}) {
+export default function Circle({ diameter = 20, positionClass = "left-0 top-0", color = ColorOptions.lightGreen} : { diameter?: number, positionClass?: any, color?: ColorOptions}) {
   return (
     <>
       {/* <div className="h-24 w-24"></div> */}

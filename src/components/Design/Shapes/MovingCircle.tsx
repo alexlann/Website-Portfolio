@@ -3,6 +3,6 @@ import Circle from "./Circle";
 
 export default function MovingCircle({ positionClass } : { positionClass?: string }) {
   return (
-    <Circle diameter={20} color={ColorOptions.green} positionClass={`z-0 ${positionClass}`} />
+    <Circle diameter={24} color={ColorOptions.green} positionClass={`z-0 ${positionClass}`} />
   )
 }
