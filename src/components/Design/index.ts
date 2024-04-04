@@ -1,4 +1,3 @@
-import Layout from "./Layout/Layout";
 import Header from "./Layout/Header";
 import ScrollIndicator from "./Scroll/ScrollIndicator";
 import Title from "./Typography/Title";
@@ -17,9 +16,9 @@ import BoldGreen from "./Typography/BoldGreen";
 import RightSide from "./Layout/RightSide";
 import LeftSide from "./Layout/LeftSide";
 import ContactCard from "./Cards/ContactCard";
+import CenteredPage from "./Layout/CenteredPage";
 
 export {
-    Layout,
     Header,
     ScrollIndicator,
     Title,
@@ -38,4 +37,5 @@ export {
     RightSide,
     LeftSide,
     ContactCard,
+    CenteredPage,
 }

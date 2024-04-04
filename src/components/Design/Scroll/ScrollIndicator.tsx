@@ -8,8 +8,8 @@ export default function ScrollIndicator({ sections, activeSection, scrollTo } : 
           return (
             <button
               key={i}
-              onClick={() => scrollTo(sections[section])}
-              className={`w-3.5 h-9 rounded-full ${sections[section].ref === activeSection.ref ? "bg-green" : "bg-light-gray"} hover:bg-gray`}
+              onClick={() => scrollTo(sections[section].title)}
+              className={`w-3.5 h-9 rounded-full ${sections[section].title === activeSection ? "bg-green" : "bg-light-gray"} hover:bg-gray`}
             >
             </button>
           )

@@ -31,12 +31,13 @@ export default function FilledWordCloud({ cloudSize } : { cloudSize?: "sm" | "lg
   const { height, width } = useWindowDimensions();
 
   // TODO: fix fontsize in hero
+  // TODO: apparat of fields of een ander font gebruiken?
 
   return (
     <Wordcloud
         words={skills}
-        width={width * 0.85 / 2}
-        height={height * 0.85 / 2}
+        width={width / 2}
+        height={height / 2}
         fontSize={(datum) => datum.value * (cloudSize === "sm" ? 4 : 5)}
         font={'apparat'}
         padding={8}
