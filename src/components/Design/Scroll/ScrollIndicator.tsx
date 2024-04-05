@@ -1,10 +1,10 @@
-export default function ScrollIndicator({ sections, activeSection, scrollTo } : { sections: any, activeSection: any, scrollTo: (section: any)=>void }) {
+import { SectionsType } from "../../../types"
+
+export default function ScrollIndicator({ sections, activeSection, scrollTo } : { sections: SectionsType, activeSection: string, scrollTo: (section: any)=>void }) {
   return (
-    // TODO: controleren in verschillende browsers
-    // TODO: overal comments toevoegen
     <div className="fixed z-10 right-9 content-center h-screen">
       <div className="flex flex-col gap-9">
-        { Object.keys(sections).map((section: any, i: number) => {
+        { Object.keys(sections).map((section: string, i: number) => {
           return (
             <button
               key={i}

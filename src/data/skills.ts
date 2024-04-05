@@ -1,3 +1,4 @@
+// TODO: add more
 const skills = [
     {
         text: "React",

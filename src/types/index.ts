@@ -28,11 +28,8 @@ export interface SectionType {
     hero?: boolean
 }
 
-// // TODO: kan efficiënter
-// export interface SectionsType {
-//     hero: SectionType;
-//     about: SectionType;
-//     skills: SectionType;
-//     projects: SectionType;
-//     contact: SectionType;
-// }
+export interface SectionsType {
+    [key: string]: SectionType
+}
+
+// TODO: add more types

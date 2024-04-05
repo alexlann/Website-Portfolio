@@ -9,7 +9,7 @@ import Circle from "./Shapes/Circle";
 import SquareGrid from "./Shapes/SquareGrid";
 import FilledWordCloud from "./Shapes/FilledWordCloud";
 import SectionTitle from "./Typography/SectionTitle";
-import Project from "./Cards/Project";
+import ProjectCard from "./Cards/ProjectCard";
 import Card from "./Cards/Card";
 import Footer from "./Layout/Footer";
 import BoldGreen from "./Typography/BoldGreen";
@@ -30,7 +30,7 @@ export {
     SquareGrid,
     FilledWordCloud,
     SectionTitle,
-    Project,
+    ProjectCard,
     Card,
     Footer,
     BoldGreen,

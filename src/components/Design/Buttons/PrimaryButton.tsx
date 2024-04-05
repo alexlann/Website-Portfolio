@@ -1,6 +1,5 @@
 export default function PrimaryButton({ outline, onClick, children} : { outline?: boolean, children: string, onClick: ()=>void, className?: string }) {
   
-  // TODO: hover voor gwne en outline button
   return (
     <button
       onClick={onClick}

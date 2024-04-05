@@ -1,53 +1,29 @@
 import { Text } from "@visx/text";
 import { Wordcloud } from "@visx/wordcloud";
 import { colors, skills } from "../../../data/skills";
-import { useEffect, useState } from "react";
+import { useWindowDimensions } from "../../../functionality/windowDimensions";
 
-// TODO: in apart file steken
-function getWindowDimensions() {
-  const { innerWidth: width, innerHeight: height } = window;
-  return {
-    width,
-    height
-  };
-}
-
-function useWindowDimensions() {
-  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowDimensions(getWindowDimensions());
-    }
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  return windowDimensions;
-}
-
-export default function FilledWordCloud({ cloudSize } : { cloudSize?: "sm" | "lg" }) {
+export default function FilledWordCloud({ cloudSize = "lg", spiral="rectangular" } : { cloudSize?: "sm" | "lg", spiral?: "rectangular" | "archimedean" }) {
   const { height, width } = useWindowDimensions();
 
   // TODO: fix fontsize in hero
-  // TODO: apparat of fields of een ander font gebruiken?
-
+  // TODO: use apparat or fields or other font?
   return (
     <Wordcloud
         words={skills}
         width={width / 2}
         height={height / 2}
-        fontSize={(datum) => datum.value * (cloudSize === "sm" ? 4 : 5)}
+        fontSize={(datum) => datum.value * (cloudSize === "sm" ? 4 : 6)}
         font={'apparat'}
         padding={8}
         rotate={0}
+        spiral={spiral}
         random={() => 0.5}
       >
         {(cloudWords) =>
-          cloudWords.map((w: any, i: any) => (
-            // TODO: maak clickable
-            // TODO: voeg hover effect toe
+          cloudWords.map((w: any, i: number) => (
+            // TODO: make clickable
+            // TODO: add hover effect
             <Text
               key={w.text}
               fill={colors[i % colors.length]}

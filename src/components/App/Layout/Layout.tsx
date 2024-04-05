@@ -3,14 +3,14 @@ import t from "../../../data/translation";
 import { MutableRefObject, useCallback, useEffect, useRef, useState } from 'react';
 import { About, Contact, Hero, Page, Projects, Skills } from '..';
 import ScrollIndicator from '../../Design/Scroll/ScrollIndicator';
+import { SectionsType } from '../../../types';
 
 export default function Layout() {
   const scrollTo = (title: string) => {
     sectionsRef.current[sections[title].id].scrollIntoView({ behavior: "smooth" })
   }
   
-  // TODO: SectionsType fixen en toevoege 
-  const sections: any = {
+  const sections: SectionsType = {
     hero: {
       id: 0,
       title: "hero",
@@ -44,10 +44,8 @@ export default function Layout() {
   };
 
   const [activeSection, setactiveSection] = useState(sections.hero.title);
-
-  const sectionsRef: MutableRefObject<any[]> = useRef([]);
-
-  const refCallback = useCallback((section: any) => {
+  const sectionsRef: MutableRefObject<Element[]> = useRef([]);
+  const refCallback = useCallback((section: Element) => {
     if (section) {
       sectionsRef.current.push(section);
     }
@@ -67,6 +65,8 @@ export default function Layout() {
             const id = entry.target.getAttribute("id");
             if (id && activeSection !== id) {
               setactiveSection(id);
+              // TODO: hide grid and hero-wordCloud on scroll as long as two sections are visible at once
+              // hideGrid();
             }
           }
         });
@@ -74,7 +74,7 @@ export default function Layout() {
       observerOptions
     );
 
-    sectionsRef.current.forEach((section) => {
+    sectionsRef.current.forEach((section: Element) => {
       observer.observe(section);
     });
 
@@ -87,7 +87,7 @@ export default function Layout() {
         <ScrollIndicator {...{ sections, activeSection, scrollTo}} />
         <main>
           {Object.keys(sections).map((sectionId, index) => (
-            <Page refCallback={refCallback} section={sections[sectionId]} key={index} />
+            <Page {...{refCallback}} section={sections[sectionId]} key={index} />
           ))}
         </main>
       </div>

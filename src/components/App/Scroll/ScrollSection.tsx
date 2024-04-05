@@ -1,7 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
+import { ReactElement } from 'react';
 
-const ScrollSection = ({ scrollTo, children } : { scrollTo?: (section: any)=>void, children: any }) => {
+const ScrollSection = ({ scrollTo, children } : { scrollTo?: (section: any)=>void, children: ReactElement }) => {
   return (
     <section className={`h-screen w-full snap-center relative`}>
       <div>

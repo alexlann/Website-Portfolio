@@ -45,37 +45,3 @@ body {
   left: 10%;
   width: 65%;
 }
-
-/* TODO: in [] values steken */
-/* Tailwind extensions */
-.leading-px {
-  line-height: 1px;
-}
-
-.left-156 {
-  left: 39rem;
-}
-
-.w-0\.75 {
-  width: 3px;
-}
-
-.h-0\.75 {
-  height: 3px;
-}
-
-.-rotate-30 {
-  rotate: -30deg;
-}
-
-.h-32vw {
-  height: 32vw;
-}
-
-.w-32vw {
-  width: 32vw;
-}
-
-.left-1\/2-6px {
-  left: calc(50% - 6px);
-}
