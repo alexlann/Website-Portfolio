@@ -4,14 +4,14 @@
 @import url("https://use.typekit.net/nas4aqu.css");
 
 :root {
-  --color-black: #2B2B29,
-  --color-dark-gray: #403F3B,
-  --color-gray: #A2A09B,
-  --color-light-gray: #DBD9D3,
-  --color-white: #ffffff,
-  --color-light-green: #CEDED4,
-  --color-green: #81BF9A,
-  --color-dark-green: #649A7A,
+  --color-black: "#2B2B29";
+  --color-dark-gray: "#403F3B";
+  --color-gray: "#A2A09B";
+  --color-light-gray: "#DBD9D3";
+  --color-white: "#ffffff";
+  --color-light-green: "#CEDED4";
+  --color-green: "#81BF9A";
+  --color-dark-green: "#649A7A";
 }
 
 body {
@@ -38,7 +38,7 @@ body {
 }
 
 .partial-underline-visible {
-  @apply partial-underline after:bg-green
+  @apply partial-underline after:bg-green;
 }
 
 .partial-underline:after {
