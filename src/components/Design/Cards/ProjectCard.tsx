@@ -6,7 +6,7 @@ import Tag from "../Tags/Tag";
 
 export default function ProjectCard({ project } : { project: ProjectType }) {
   return (
-    <Card isGroup={true}>
+    <Card isProject={true}>
         <>
           {/* thumbnail */}
           <div className="w-full h-28 rounded overflow-hidden	">

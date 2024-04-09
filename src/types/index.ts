@@ -31,5 +31,3 @@ export interface SectionType {
 export interface SectionsType {
     [key: string]: SectionType
 }
-
-// TODO: add more types

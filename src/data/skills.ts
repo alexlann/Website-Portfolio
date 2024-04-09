@@ -1,4 +1,3 @@
-// TODO: add more
 const skills = [
     {
         text: "React",
@@ -33,11 +32,31 @@ const skills = [
         value: 8,
     },
     {
+        text: "Git",
+        value: 7,
+    },
+    {
+        text: "OOP",
+        value: 7,
+    },
+    {
         text: "Node.js",
         value: 7,
     },
     {
+        text: "Craft CMS",
+        value: 7,
+    },
+    {
+        text: "Statamic",
+        value: 7,
+    },
+    {
         text: "MySQL",
+        value: 7,
+    },
+    {
+        text: "PostgresSQL",
         value: 7,
     },
     {
@@ -84,8 +103,17 @@ const skills = [
         text: "IoT",
         value: 4,
     },
+    {
+        text: "Raspberry Pi",
+        value: 4,
+    },
+    {
+        text: "Arduino",
+        value: 4,
+    },
 ];
 
-const colors = ["#CEDED4", "#81BF9A", "#649A7A", "#403F3B"];
+const lightColors = ["#CEDED4", "#81BF9A", "#649A7A", "#403F3B"];
+const darkColors = ["#403F3B", "#81BF9A", "#403F3B"]
 
-export { skills, colors };
+export { skills, lightColors, darkColors };
