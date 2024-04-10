@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/alexlann/static/css/main.c8938c9b.css",
-    "main.js": "/alexlann/static/js/main.54b3cd9b.js",
+    "main.js": "/alexlann/static/js/main.8628bede.js",
     "static/media/logo.svg": "/alexlann/static/media/logo.73bbc3ea28f5d0601828303d7b5dd93f.svg",
     "index.html": "/alexlann/index.html",
     "main.c8938c9b.css.map": "/alexlann/static/css/main.c8938c9b.css.map",
-    "main.54b3cd9b.js.map": "/alexlann/static/js/main.54b3cd9b.js.map"
+    "main.8628bede.js.map": "/alexlann/static/js/main.8628bede.js.map"
   },
   "entrypoints": [
     "static/css/main.c8938c9b.css",
-    "static/js/main.54b3cd9b.js"
+    "static/js/main.8628bede.js"
   ]
 }
