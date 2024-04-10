@@ -14,7 +14,7 @@ const t = {
   "btn-copy": "Copy information",
   "hero-btn-contact": "Contact me",
   "hero-btn-projects": "View my Projects",
-  "hero-title-sub": "Full Stack & Software Developer",
+  "hero-title-sub": "Full Stack Developer",
   "hero-title-upper": "Hi, I am",
   "projects-link-github": "Github",
   "projects-title": "Projects",
